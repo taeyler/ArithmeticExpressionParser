@@ -14,6 +14,7 @@ class Split
 
         Number* numCheck();             //Return Number pointer
         Operator* operCheck(char op);   //Returns Operator pointer
+        Variable* varCheck(char var);
 
         int currSpot();                 //Current spot of stringstream input
         bool endInput();                //End of user input

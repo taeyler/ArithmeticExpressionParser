@@ -24,6 +24,22 @@ double Number::eval(){
     return number;
 }
 
+Variable::Variable(string var, double num){
+    this->var = var;
+    this->num = num;
+}
+
+double Variable::eval(string var){
+    if (this->var == var){
+        return num;
+    }
+    else{
+        cout << var << " has not been assigned\n";
+        return 0;
+    }
+}
+
+
 Arithmetic::Arithmetic(Equation* left, Equation* right, Operator* oper){
     this->left = left;                      //Sets constructor variables to object's private variables
     this->right = right;

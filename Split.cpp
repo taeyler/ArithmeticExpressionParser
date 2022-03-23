@@ -6,6 +6,7 @@ Split::Split(char* rawInput){                   //Constructor with user's input
     input << string(rawInput);                  //Transforms char pointer into stringstream
 };
 
+
 Number* Split::numCheck(){
     this->removeSpaces();
     char cur = input.peek();
@@ -16,6 +17,15 @@ Number* Split::numCheck(){
         return new Number(num);                 //Number pointer with num is created
     }
     return nullptr;
+}
+
+//WORKING ON THIS ONE
+Variable* Split::varCheck(char var){
+    this->removeSpaces();
+    char cur = input.peek();
+
+    if (isalpha(cur)){
+    }
 }
 
 Operator* Split::operCheck(char op){            //Makes sure you have the correct operator input

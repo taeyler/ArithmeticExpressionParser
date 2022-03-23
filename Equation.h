@@ -29,6 +29,16 @@ class Number : public Equation{			//Stores the numbers for the Equation
 		double number;
 };
 
+class Variable : public Equation{
+	public: 
+		Variable(string var, double num);
+		virtual double eval(string var);
+		
+	private:
+		string var;
+		double num;
+};
+
 class Arithmetic : public Equation{
 	public:
 		Arithmetic(Equation *left, Equation *right, Operator* oper);	//Final Arithmetic subclass to calculate Equation 

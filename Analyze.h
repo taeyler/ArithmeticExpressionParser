@@ -15,6 +15,7 @@ class Analyze{
     private:
         Split* token;                       //Keeps track of input and breaks it into smaller pieces
         Operator* oper;
+        Equation* assignVar();//Working on this one
         Equation* solution();
         Equation* addSub();
         Equation* multDiv();

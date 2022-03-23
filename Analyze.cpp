@@ -29,6 +29,12 @@ Equation* Analyze::solution(){
     return nullptr;
 }
 
+//Working on this one
+Equation* Analyze::assignVar(){
+    int curr = token->currSpot();
+
+}
+
 Equation* Analyze::addSub(){
     int curr = token->currSpot();                       //Logs currspot of equation
     Equation* left = multDiv();                         //Left pointer checks multDiv function checking for higher priority in PEMDAS
